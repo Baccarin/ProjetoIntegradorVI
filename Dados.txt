@@ -1,0 +1,579 @@
+Número de CPUs:  8
+
+Leitura n°  0
+25/Aug/2020 21:11
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.56 Gb (Disco C:)
+Memória livre: 5.16 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  47.6 %
+Percentual de memória RAM em uso: 45.3 %
+Percentual de memória RAM livre: 54.72 %
+
+Leitura n°  1
+25/Aug/2020 21:16
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.64 Gb (Disco C:)
+Memória livre: 5.09 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  47.7 %
+Percentual de memória RAM em uso: 46.3 %
+Percentual de memória RAM livre: 53.72 %
+
+Leitura n°  2
+25/Aug/2020 21:21
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.63 Gb (Disco C:)
+Memória livre: 5.09 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  46.1 %
+Percentual de memória RAM em uso: 45.0 %
+Percentual de memória RAM livre: 54.99 %
+
+Leitura n°  3
+25/Aug/2020 21:26
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.64 Gb (Disco C:)
+Memória livre: 5.09 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  46.4 %
+Percentual de memória RAM em uso: 45.3 %
+Percentual de memória RAM livre: 54.67 %
+
+Leitura n°  4
+25/Aug/2020 21:31
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.64 Gb (Disco C:)
+Memória livre: 5.09 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  46.2 %
+Percentual de memória RAM em uso: 45.1 %
+Percentual de memória RAM livre: 54.86 %
+
+Leitura n°  5
+25/Aug/2020 21:36
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.63 Gb (Disco C:)
+Memória livre: 5.09 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  46.2 %
+Percentual de memória RAM em uso: 45.0 %
+Percentual de memória RAM livre: 55.01 %
+
+Leitura n°  6
+25/Aug/2020 21:41
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.63 Gb (Disco C:)
+Memória livre: 5.09 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  46.3 %
+Percentual de memória RAM em uso: 45.1 %
+Percentual de memória RAM livre: 54.92 %
+
+Leitura n°  7
+25/Aug/2020 21:46
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.63 Gb (Disco C:)
+Memória livre: 5.09 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  46.2 %
+Percentual de memória RAM em uso: 44.9 %
+Percentual de memória RAM livre: 55.06 %
+
+Leitura n°  8
+25/Aug/2020 21:51
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.63 Gb (Disco C:)
+Memória livre: 5.09 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  70.9 %
+Percentual de memória RAM em uso: 60.1 %
+Percentual de memória RAM livre: 39.93 %
+
+Leitura n°  9
+25/Aug/2020 21:56
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.64 Gb (Disco C:)
+Memória livre: 5.08 Gb (Disco C:)
+Percentual de memória usada: 95.4 % (Disco C:)
+
+Memória swap total:  74.1 %
+Percentual de memória RAM em uso: 62.0 %
+Percentual de memória RAM livre: 38.0 %
+
+Leitura n°  10
+25/Aug/2020 22:01
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.64 Gb (Disco C:)
+Memória livre: 5.08 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  74.1 %
+Percentual de memória RAM em uso: 62.0 %
+Percentual de memória RAM livre: 38.03 %
+
+Leitura n°  11
+25/Aug/2020 22:06
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.65 Gb (Disco C:)
+Memória livre: 5.07 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  74.3 %
+Percentual de memória RAM em uso: 62.2 %
+Percentual de memória RAM livre: 37.79 %
+
+Leitura n°  12
+25/Aug/2020 22:11
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.65 Gb (Disco C:)
+Memória livre: 5.07 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  74.3 %
+Percentual de memória RAM em uso: 62.1 %
+Percentual de memória RAM livre: 37.89 %
+
+Leitura n°  13
+25/Aug/2020 22:16
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  51.2 %
+Percentual de memória RAM em uso: 48.6 %
+Percentual de memória RAM livre: 51.38 %
+
+Leitura n°  14
+25/Aug/2020 22:21
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  50.9 %
+Percentual de memória RAM em uso: 48.3 %
+Percentual de memória RAM livre: 51.69 %
+
+Leitura n°  15
+25/Aug/2020 22:26
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  52.4 %
+Percentual de memória RAM em uso: 49.7 %
+Percentual de memória RAM livre: 50.28 %
+
+Leitura n°  16
+25/Aug/2020 22:31
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  52.4 %
+Percentual de memória RAM em uso: 50.1 %
+Percentual de memória RAM livre: 49.95 %
+
+Leitura n°  17
+25/Aug/2020 22:36
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  53.0 %
+Percentual de memória RAM em uso: 50.7 %
+Percentual de memória RAM livre: 49.35 %
+
+Leitura n°  18
+25/Aug/2020 22:41
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  52.8 %
+Percentual de memória RAM em uso: 50.7 %
+Percentual de memória RAM livre: 49.27 %
+
+Leitura n°  19
+25/Aug/2020 22:46
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  52.6 %
+Percentual de memória RAM em uso: 50.5 %
+Percentual de memória RAM livre: 49.52 %
+
+Leitura n°  20
+25/Aug/2020 22:51
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.67 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  53.2 %
+Percentual de memória RAM em uso: 51.4 %
+Percentual de memória RAM livre: 48.62 %
+
+Leitura n°  21
+25/Aug/2020 22:56
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  52.8 %
+Percentual de memória RAM em uso: 51.1 %
+Percentual de memória RAM livre: 48.86 %
+
+Leitura n°  22
+25/Aug/2020 23:01
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.07 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  53.1 %
+Percentual de memória RAM em uso: 51.2 %
+Percentual de memória RAM livre: 48.84 %
+
+Leitura n°  23
+25/Aug/2020 23:06
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.65 Gb (Disco C:)
+Memória livre: 5.07 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  53.2 %
+Percentual de memória RAM em uso: 51.6 %
+Percentual de memória RAM livre: 48.36 %
+
+Leitura n°  24
+25/Aug/2020 23:11
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.65 Gb (Disco C:)
+Memória livre: 5.07 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  53.3 %
+Percentual de memória RAM em uso: 51.7 %
+Percentual de memória RAM livre: 48.34 %
+
+Leitura n°  25
+25/Aug/2020 23:16
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.07 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  54.1 %
+Percentual de memória RAM em uso: 52.6 %
+Percentual de memória RAM livre: 47.38 %
+
+Leitura n°  26
+25/Aug/2020 23:21
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  54.7 %
+Percentual de memória RAM em uso: 53.7 %
+Percentual de memória RAM livre: 46.3 %
+
+Leitura n°  27
+25/Aug/2020 23:26
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  55.0 %
+Percentual de memória RAM em uso: 53.8 %
+Percentual de memória RAM livre: 46.15 %
+
+Leitura n°  28
+25/Aug/2020 23:31
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  55.5 %
+Percentual de memória RAM em uso: 54.0 %
+Percentual de memória RAM livre: 45.97 %
+
+Leitura n°  29
+25/Aug/2020 23:36
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.67 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  55.3 %
+Percentual de memória RAM em uso: 54.1 %
+Percentual de memória RAM livre: 45.92 %
+
+Leitura n°  30
+25/Aug/2020 23:41
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  55.1 %
+Percentual de memória RAM em uso: 54.1 %
+Percentual de memória RAM livre: 45.88 %
+
+Leitura n°  31
+25/Aug/2020 23:46
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.66 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  54.7 %
+Percentual de memória RAM em uso: 53.7 %
+Percentual de memória RAM livre: 46.26 %
+
+Leitura n°  32
+25/Aug/2020 23:51
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.67 Gb (Disco C:)
+Memória livre: 5.06 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  54.2 %
+Percentual de memória RAM em uso: 53.4 %
+Percentual de memória RAM livre: 46.59 %
+
+Leitura n°  33
+25/Aug/2020 23:56
+
+Memória total: 931.48 Gb (Disco G:)
+Memória usada: 783.28 Gb (Disco G:)
+Memória livre: 148.2 (Gb Disco G:)
+Percentual de memória usada: 84.1 % (Disco G:)
+
+Memória total: 111.72 Gb (Disco C:)
+Memória usada: 106.64 Gb (Disco C:)
+Memória livre: 5.08 Gb (Disco C:)
+Percentual de memória usada: 95.5 % (Disco C:)
+
+Memória swap total:  55.5 %
+Percentual de memória RAM em uso: 53.9 %
+Percentual de memória RAM livre: 46.06 %
