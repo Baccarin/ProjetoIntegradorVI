@@ -17,8 +17,8 @@ try:
 except Error as e:
     print("Error while connecting to MySQL", e)
 finally:
+    quantidade = 1
     while True:
-        quantidade = 1
         id_disco_G = 1
         id_disco_C = 2
         id_disco_E = 3
@@ -58,4 +58,4 @@ finally:
 
         print("Insert",quantidade)
         quantidade = quantidade + 1
-        time.sleep(300)
+        time.sleep(900)
