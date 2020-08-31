@@ -58,4 +58,4 @@ finally:
 
         print("Insert",quantidade)
         quantidade = quantidade + 1
-        time.sleep(900)
+        time.sleep(300)
