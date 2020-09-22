@@ -17,6 +17,8 @@ create table leitura(
 	FOREIGN KEY (id_disco) REFERENCES disco(id)
 );
 
+DROP TABLE leitura
+
 insert into leitura (id_disco,valor_usado,valor_livre,valor_livre_percentual,swap_percentual,ram_livre,ram_livre_percentual)
 values (%s,%s,%s,%s,%s,%s,%s);
 
