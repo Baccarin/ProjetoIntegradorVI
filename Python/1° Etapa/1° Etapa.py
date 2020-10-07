@@ -15,7 +15,7 @@ try:
         cursor = connection.cursor()
         cursor.execute("select database();")
         record = cursor.fetchone()
-        print("Base conectada: ", record)
+        print("Base conectada: ", record
 
 except Error as e:
     #Caso ocorra erro
