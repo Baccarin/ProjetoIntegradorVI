@@ -21,7 +21,7 @@ def createTables(base,senha):
     finally:
 
         createTable = """
-			create table disco (
+			create table if not exists disco (
 				id int auto_increment primary key,
 				nome varchar (200) not null,
 				espaco_total float not null
@@ -30,7 +30,7 @@ def createTables(base,senha):
         print('Criada tabela disco')
 
         createTable = """
-		create table usuario (
+		create table if not exists usuario (
 				id int auto_increment primary key,
 				nome varchar (200) not null unique,
 				dta_primeiro_acesso TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -39,7 +39,7 @@ def createTables(base,senha):
         print('Criada tabela usuario')
 
         createTable = """
-		create table pasta(
+		create table if not exists pasta(
 				id int auto_increment primary key,
 				diretorio varchar (500) not null,
 				quantidadeLeituras int check(quantidadeLeituras > 0)
@@ -48,7 +48,7 @@ def createTables(base,senha):
         print('Criada tabela pasta')
 
         createTable = """
-		create table leitura(
+		create table if not exists leitura(
 				id int auto_increment primary key,
 				id_disco int not null,
 				id_usuario int not null,
@@ -95,13 +95,13 @@ def insertDados(base, senha):
 
         insert = """
             insert into pasta(diretorio,quantidadeLeituras)
-            values('Teste de insert',1);"""
+            values('Teste de insert 2',1);"""
         cursor.execute(insert)
         print('Insert da pasta')
 
         insert = """
             insert into usuario(nome)
-            values ('Teste de 1° usuário');"""
+            values ('Teste de 2° usuário');"""
         cursor.execute(insert)
         print('Insert do usuario')
 
