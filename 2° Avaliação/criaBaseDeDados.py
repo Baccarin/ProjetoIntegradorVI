@@ -1,24 +1,27 @@
 import mysql.connector
+import psutil
 from mysql.connector import Error
 
 
-def createTables(base,senha):
+def createTables(base, senha):
     try:
         # Iniciada tentativa de conexão com o banco
         connection = mysql.connector.connect(
             # Informações da base de dados
-            host='localhost', database=base, user='root', password=senha)
+            host='localhost', database=base, user='user', password=senha)
         if connection.is_connected():
             db_Info = connection.get_server_info()
+            print("Conectado a MySQL Server versão ", db_Info)
             cursor = connection.cursor()
             cursor.execute("select database();")
             record = cursor.fetchone()
+            print("Base conectada: ", record)
 
     except Error as e:
         # Caso ocorra erro
         print("Não conectado", e)
 
-    finally:
+    finally: 
 
         createTable = """
 			create table if not exists disco (
@@ -73,13 +76,15 @@ def insertDados(base, senha):
     try:
         # Iniciada tentativa de conexão com o banco
         connection = mysql.connector.connect(
-            #Informações da base de dados
+            # Informações da base de dados
             host='localhost', database=base, user='root', password=senha)
         if connection.is_connected():
             db_Info = connection.get_server_info()
+            print("Conectado a MySQL Server versão ", db_Info)
             cursor = connection.cursor()
             cursor.execute("select database();")
             record = cursor.fetchone()
+            print("Base conectada: ", record)
 
     except Error as e:
         # Caso ocorra erro
@@ -87,23 +92,34 @@ def insertDados(base, senha):
 
     finally:
 
-        insert = """
-            insert into disco (nome, espaco_total)
-            values('G://', 931.00),('C://', 111.00),('E://', 223.00);"""
-        cursor.execute(insert)
-        print('Insert do disco')
+        p = psutil.Process()
+        #insert = """
+        #    insert into disco (nome, espaco_total)
+        #    values('G://', 931.00),('C://', 111.00),('E://', 223.00);"""
+        #cursor.execute(insert)
+        #print('Insert do disco')
 
-        insert = """
-            insert into pasta(diretorio,quantidadeLeituras)
-            values('Teste de insert 2',1);"""
-        cursor.execute(insert)
+        #insert = """
+        #    insert into pasta(diretorio,quantidadeLeituras)
+        #    values(%s,%s);"""
+
+        select = " select quantidadeleituras from pasta where diretorio like 'D%' "
+        diretorio = p.cwd()
+        pasta = diretorio.split(':')
+        print (pasta[0])
+        cursor.execute(select)
+        quantidade = cursor.fetchall()
+        print(quantidade)
+        #cursor.execute(insert,(p.cwd(),5))
         print('Insert da pasta')
 
-        insert = """
-            insert into usuario(nome)
-            values ('Teste de 2° usuário');"""
-        cursor.execute(insert)
-        print('Insert do usuario')
+        #insert =  "insert into usuario(nome) values (%s);"
+        #cursor.execute(insert,p.username().   )
+        #print('Insert do usuario')
 
         connection.commit()
         connection.close()
+
+
+createTables('projetovi', '123456')
+insertDados('projetovi', '123456')

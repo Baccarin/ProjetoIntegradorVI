@@ -8,7 +8,7 @@ try:
     # Iniciada tentativa de conexão com o banco
     connection = mysql.connector.connect(
         # Informações da base de dados
-        host='localhost', database='python', user='root', password='30252115')
+        host='localhost', database='python', user='root', password='123456')
     if connection.is_connected():
         db_Info = connection.get_server_info()
         print("Conectado a MySQL Server versão ", db_Info)
