@@ -23,7 +23,7 @@ class Application:
         self.Cont2.pack()
 
         self.discoIdLabel = Label(
-            self.Cont2, text="Id Disco", font=self.fontePadrao)
+        self.Cont2, text="Id Disco", font=self.fontePadrao)
         self.discoIdLabel.pack(side=LEFT)
 
         self.discoIdTxt = Entry(self.Cont2)
@@ -37,7 +37,7 @@ class Application:
         self.Cont3.pack()
 
         self.userNomeLabel = Label(
-            self.Cont3, text="Nome Usuário", font=self.fontePadrao)
+        self.Cont3, text="Nome Usuário", font=self.fontePadrao)
         self.userNomeLabel.pack(side=LEFT)
 
         self.userNomeTxt = Entry(self.Cont3)
@@ -46,7 +46,7 @@ class Application:
         self.userNomeTxt.pack(side=LEFT)
 
         self.userIdLabel = Label(
-            self.Cont3, text="Id Usuário", font=self.fontePadrao)
+        self.Cont3, text="Id Usuário", font=self.fontePadrao)
         self.userIdLabel.pack(side=LEFT)
 
         self.userIdTxt = Entry(self.Cont3)
@@ -60,7 +60,7 @@ class Application:
         self.Cont4.pack()
 
         self.pastaNomeLabel = Label(
-            self.Cont4, text="Nome da Pasta", font=self.fontePadrao)
+        self.Cont4, text="Nome da Pasta", font=self.fontePadrao)
         self.pastaNomeLabel.pack(side=LEFT)
 
         self.pastaNomeTxt = Entry(self.Cont4)
@@ -69,7 +69,7 @@ class Application:
         self.pastaNomeTxt.pack(side=LEFT)
 
         self.pastaIdLabel = Label(
-            self.Cont4, text="Id da Pasta", font=self.fontePadrao)
+        self.Cont4, text="Id da Pasta", font=self.fontePadrao)
         self.pastaIdLabel.pack(side=LEFT)
 
         self.pastaIdTxt = Entry(self.Cont4)
@@ -79,5 +79,7 @@ class Application:
 
 
 root = Tk()
+
+
 Application(root)
 root.mainloop()
