@@ -38,7 +38,7 @@ finally:
     valor_usadoE = round(discoE.used / (1024.0 ** 3), 2)
     valor_livreE = round(discoE.free / (1024.0 ** 3), 2)
 
-    cursor.execute(insertDisco, ("G://", (valor_livreG + valor_usadoG)))
+    #cursor.execute(insertDisco, ("G://", (valor_livreG + valor_usadoG)))
     cursor.execute(insertDisco, ("C://", (valor_livreC + valor_usadoC)))
     cursor.execute(insertDisco, ("E://", (valor_livreE + valor_usadoE)))
 
