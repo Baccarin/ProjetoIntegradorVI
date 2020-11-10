@@ -76,12 +76,60 @@ class Application:
 
         self.teste = Button(self.botao,text="Teste",
          font=self.fontePadrao,width=15)
-        self.teste["command"] = leitura.bt_iniciarLeitura
+        self.teste["command"] = self.print_discoNome
         self.teste.pack(side=RIGHT)
 
         self.sair = Button(self.botao,bg='red',text="Sair",
          font=self.fontePadrao,width=5,command=self.botao.quit)
         self.sair.pack()
+
+    def print_discoId(self):
+        try:
+        # Iniciada tentativa de conexão com o banco
+            connection = mysql.connector.connect(
+            # Informações da base de dados
+            host='localhost', database='projetovi', user='user', password='123456')
+            if connection.is_connected():
+                cursor = connection.cursor()
+                cursor.execute("select database();")
+
+        except Error as e:
+            # Caso ocorra erro
+            print("Não conectado", e)
+        finally:
+            try:
+                discoId = int (self.discoIdTxt.get())
+                print(discoId)
+                cursor.execute("select * from disco where id = %s ",discoId)
+                disco = cursor.fetchall()
+                #print(disco[0])
+            except ValueError:
+                print("Somente numeros sao aceitos. Tente novamente.")
+
+    def print_discoNome(self):
+        try:
+        # Iniciada tentativa de conexão com o banco
+            connection = mysql.connector.connect(
+            # Informações da base de dados
+            host='localhost', database='projetovi', user='user', password='123456')
+            if connection.is_connected():
+                cursor = connection.cursor()
+                cursor.execute("select database();")
+
+        except Error as e:
+            # Caso ocorra erro
+            print("Não conectado", e)
+        finally:
+            discoNome = self.discoNomeTxt.get()
+            print(discoNome)
+            select = '"' + '%' + discoNome + '%' + '"'
+            print (select)
+            cursor.execute("select id from disco where nome like  '%s'  ",select)
+            discoNome = cursor.fetchone() 
+            print(discoNome)
+            #print(disco[0])
+
+
 
     def init_label(self, master=None):
 
