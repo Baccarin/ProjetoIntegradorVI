@@ -2,140 +2,158 @@ from tkinter import *
 import tkinter
 import mysql.connector
 from mysql.connector import Error
-import leitura as leitura
+import Leitura as leitura
+#import BotoesAcoes as acoes
 
 
 class Application:
 
-        def iniciarLeitura(self):
-            try:
-                # Iniciada tentativa de conexão com o banco
-                connection = mysql.connector.connect(
-                    # Informações da base de dados
-                    host='localhost', database='projetovi', user='root', password='123456')
-                if connection.is_connected():
-                    db_Info = connection.get_server_info()
-                    print("Conectado a MySQL Server versão ", db_Info)
-                    cursor = connection.cursor()
-                    cursor.execute("select database();")
-                    record = cursor.fetchone()
-                    print("Base conectada: ", record)
+    def iniciarLeitura(self):
+        try:
+            # Iniciada tentativa de conexão com o banco
+            connection = mysql.connector.connect(
+                # Informações da base de dados
+                host='localhost', database='projetovi', user='root', password='123456')
+            if connection.is_connected():
+                db_Info = connection.get_server_info()
+                print("Conectado a MySQL Server versão ", db_Info)
+                cursor = connection.cursor()
+                cursor.execute("select database();")
+                record = cursor.fetchone()
+                print("Base conectada: ", record)
 
-            except Error as e:
-                # Caso ocorra erro
-                print("Não conectado", e)
+        except Error as e:
+            # Caso ocorra erro
+            print("Não conectado", e)
 
-            finally:
-                leitura.iniciar()
+        finally:
+            print("")
 
+    def plot_botoes(self, master=None):
 
-        def maiorUsoRam(self):
-            maiorUsoRAM = "select * from leitura order by ram_livre_percentual limit 1;"
-            cursor.execute(maiorUsoRAM)
-            return maiorUsoRAM
+        self.botao = Frame(master)
+        self.botao["pady"] = 10
+        self.botao.pack()
 
-        def menorUsoRam(self):
-            menorUsoRAM = "select * from leitura order by ram_livre_percentual desc limit 1;"
-            cursor.execute(menorUsoRAM)
-            return menorUsoRAM
+        self.plot_E = Button(self.botao,bg='blue')
+        self.plot_E["text"] = "HD (E:)"
+        self.plot_E["font"] = ("Calibri", "10")
+        self.plot_E["width"] = 15
+        self.plot_E["command"] = leitura.bt_plot_HD_E
+        self.plot_E.pack(side=RIGHT)
 
-        def __init__(self, master=None):
+        self.plot_D = Button(self.botao,bg='yellow')
+        self.plot_D["text"] = "HD (D:)"
+        self.plot_D["font"] = ("Calibri", "10")
+        self.plot_D["width"] = 15
+        self.plot_D["command"] = leitura.bt_plot_HD_D
+        self.plot_D.pack(side=RIGHT)
 
-            self.fontePadrao = ("Arial", "10")
+        self.plot_C = Button(self.botao,bg='green')
+        self.plot_C["text"] = "HD (C:)"
+        self.plot_C["font"] = ("Calibri", "10")
+        self.plot_C["width"] = 15
+        self.plot_C["command"] = leitura.bt_plot_HD_C
+        self.plot_C.pack(side=RIGHT)
 
-            # Container do Titulo #
-            self.Cont1 = Frame(master)
-            self.Cont1["pady"] = 10
-            self.Cont1.pack()
+        self.RAM = Button(self.botao,bg='pink')
+        self.RAM["text"] = "RAM"
+        self.RAM["font"] = ("Calibri", "10")
+        self.RAM["width"] = 15
+        self.RAM["command"] = leitura.bt_plot_RAM
+        self.RAM.pack(side=RIGHT)
 
-            self.titulo = Label(self.Cont1, text="Monitoramento de dados")
-            self.titulo["font"] = ("Arial", "10", "bold")
-            self.titulo.pack()
+    def init_botoes(self, master=None):
 
-            # Container do Disco #
-            self.Cont2 = Frame(master)
-            self.Cont2["pady"] = 10
-            self.Cont2.pack()
+        self.plot_botoes()
 
-            self.discoIdLabel = Label(self.Cont2, text="Id Disco", font=self.fontePadrao)
-            self.discoIdLabel.pack(side=LEFT, padx= 14)
+        self.botao = Frame(master)
+        self.botao["pady"] = 10
+        self.botao.pack()
 
-            self.discoIdTxt = Entry(self.Cont2)
-            self.discoIdTxt["width"] = 10
-            self.discoIdTxt["font"] = self.fontePadrao
-            self.discoIdTxt.pack(side=LEFT, padx= 10)
+        self.leitura = Button(self.botao)
+        self.leitura["text"] = "Leitura"
+        self.leitura["font"] = ("Calibri", "10")
+        self.leitura["width"] = 15
+        self.leitura["command"] = leitura.bt_iniciarLeitura
+        self.leitura.pack(side=RIGHT)
 
-            self.discoNomeLabel = Label(self.Cont2, text="Nome Disco", font=self.fontePadrao)
-            self.discoNomeLabel.pack(side=LEFT)
+        self.sair = Button(self.botao,bg='red')
+        self.sair["text"] = "Sair"
+        self.sair["font"] = ("Calibri", "10")
+        self.sair["width"] = 5
+        self.sair["command"] = self.botao.quit
+        self.sair.pack()
 
-            self.discoNomeTxt = Entry(self.Cont2)
-            self.discoNomeTxt["width"] = 10
-            self.discoNomeTxt["font"] = self.fontePadrao
-            self.discoNomeTxt.pack(side=LEFT)
+    def init_label(self, master=None):
+        # Container do Titulo #
+        self.contTitulo = Frame(master)
+        self.contTitulo["pady"] = 10
+        self.contTitulo.pack()
 
-            # Container do Disco #
-            self.Cont3 = Frame(master)
-            self.Cont3["pady"] = 10
+        self.titulo = Label(self.contTitulo, text="Monitoramento de dados")
+        self.titulo["font"] = ("Arial", "10", "bold")
+        self.titulo.pack()
 
-            self.Cont3.pack()
+        self.fontePadrao = ("Arial", "10")
+        # Container do Disco #
+        self.contDisco = Frame(master)
+        self.contDisco["pady"] = 10
+        self.contDisco.pack()
 
-            self.dtaInicio = Label(self.Cont3, text="Data Inicio", font=self.fontePadrao)
-            self.dtaInicio.pack(side=LEFT, padx= 10)
+        self.discoIdLabel = Label(self.contDisco, text="Id Disco", font=self.fontePadrao)
+        self.discoIdLabel.pack(side=LEFT, padx=14)
 
-            self.dtaInicioTxt = Entry(self.Cont3)
-            self.dtaInicioTxt["width"] = 10
-            self.dtaInicioTxt["font"] = self.fontePadrao
-            self.dtaInicioTxt.pack(side=LEFT)
+        self.discoIdTxt = Entry(self.contDisco)
+        self.discoIdTxt["width"] = 10
+        self.discoIdTxt["font"] = self.fontePadrao
+        self.discoIdTxt.pack(side=LEFT, padx=10)
 
-            self.dtaFimLabel = Label(self.Cont3, text="Data Fim", font=self.fontePadrao)
-            self.dtaFimLabel.pack(side=LEFT, padx= 14)
+        self.discoNomeLabel = Label(self.contDisco, text="Nome Disco", font=self.fontePadrao)
+        self.discoNomeLabel.pack(side=LEFT)
 
-            self.dtaFimTxt = Entry(self.Cont3)
-            self.dtaFimTxt["width"] = 10
-            self.dtaFimTxt["font"] = self.fontePadrao
-            self.dtaFimTxt.pack(side=LEFT)
+        self.discoNomeTxt = Entry(self.contDisco)
+        self.discoNomeTxt["width"] = 10
+        self.discoNomeTxt["font"] = self.fontePadrao
+        self.discoNomeTxt.pack(side=LEFT)
 
-            # Container de botões
+        # Container do Data #
+        self.contDisco = Frame(master)
+        self.contDisco["pady"] = 10
+        self.contDisco.pack()
 
-            self.botao = Frame(master)
-            self.botao["pady"] = 10
-            self.botao.pack()
+        self.dtaInicio = Label(self.contDisco, text="Data Inicio", font=self.fontePadrao)
+        self.dtaInicio.pack(side=LEFT, padx=10)
 
-            self.maiorRam = Button(self.botao)
-            self.maiorRam["text"] = "Maior RAM"
-            self.maiorRam["font"] = ("Calibri", "10")
-            self.maiorRam["width"] = 15
-            self.maiorRam.pack()
+        self.dtaInicioTxt = Entry(self.contDisco)
+        self.dtaInicioTxt["width"] = 10
+        self.dtaInicioTxt["font"] = self.fontePadrao
+        self.dtaInicioTxt.pack(side=LEFT)
 
-            self.menorRam = Button(self.botao)
-            self.menorRam["text"] = "Menor RAM"
-            self.menorRam["font"] = ("Calibri", "10")
-            self.menorRam["width"] = 15
-            self.menorRam.pack()
+        self.dtaFimLabel = Label(self.contDisco, text="Data Fim", font=self.fontePadrao)
+        self.dtaFimLabel.pack(side=LEFT, padx=14)
 
-            self.leitura = Button(self.botao,command = )
-            self.leitura["text"] = "Leitura"
-            self.leitura["font"] = ("Calibri", "10")
-            self.leitura["width"] = 15
-            self.sair["command"] = self.botao.quit
-            self.leitura.pack()
+        self.dtaFimTxt = Entry(self.contDisco)
+        self.dtaFimTxt["width"] = 10
+        self.dtaFimTxt["font"] = self.fontePadrao
+        self.dtaFimTxt.pack(side=LEFT)
 
-            self.excluir = Button(self.botao)
-            self.excluir["text"] = "Excluir"
-            self.excluir["font"] = ("Calibri", "10")
-            self.excluir["width"] = 15
-            self.excluir.pack()
+    def __init__(self, master=None):
 
-            self.sair = Button(self.botao)
-            self.sair["text"] = "Sair"
-            self.sair["font"] = ("Calibri", "10")
-            self.sair["width"] = 5
-            self.sair["command"] = self.botao.quit
-            self.sair.pack(side=BOTTOM)
-            self.sair.pack()
+        self.init_label()
+        self.init_botoes()
+
+        self.fontePadrao = ("Arial", "10")
+        self.leituraCont = Frame(master)
+        self.leituraCont["pady"] = 20
+        self.leituraCont["padx"] = 20
+        self.leituraCont.pack()
+
+        # Container de botões
 
 
 root = Tk()
+root.geometry('600x400')
 
 
 Application(root)
