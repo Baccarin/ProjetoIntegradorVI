@@ -23,7 +23,7 @@ def bt_plot_RAM():
         maiorRam = cursor.fetchall()
         plt.plot(maiorRam)
         plt.ylabel('Uso da memória RAM (%)')
-        plt.xlabel('Número de leituras')
+        plt.xlabel('Número da leitura')
         plt.show()
 
 def bt_plot_HD_D():
@@ -44,7 +44,7 @@ def bt_plot_HD_D():
         valorHdD = cursor.fetchall()
         plt.plot(valorHdD,'y--')
         plt.ylabel('Ocupação do disco D') 
-        plt.xlabel('Número de leituras')
+        plt.xlabel('Número da leitura')
         plt.title("Gráfico Disco D:")
         
         plt.show()
@@ -67,7 +67,7 @@ def bt_plot_HD_C():
         valorHdC = cursor.fetchall()
         plt.plot(valorHdC,'g--')
         plt.ylabel('Ocupação do disco C') 
-        plt.xlabel('Número de leituras')
+        plt.xlabel('Número da leitura')
         plt.title("Gráfico Disco C:")
         plt.show()
 
@@ -89,7 +89,7 @@ def bt_plot_HD_E():
         valorHdE = cursor.fetchall()
         plt.plot(valorHdE,'b--')
         plt.ylabel('Ocupação do disco E') 
-        plt.xlabel('Número de leituras')
+        plt.xlabel('Número da leitura')
         plt.title("Gráfico Disco E:")
         plt.show()
 

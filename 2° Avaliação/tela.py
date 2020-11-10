@@ -67,75 +67,63 @@ class Application:
 
         self.plot_botoes()
 
-        self.botao = Frame(master)
-        self.botao["pady"] = 10
+        self.botao = Frame(master,pady=10)
         self.botao.pack()
 
-        self.leitura = Button(self.botao)
-        self.leitura["text"] = "Leitura"
-        self.leitura["font"] = ("Calibri", "10")
-        self.leitura["width"] = 15
-        self.leitura["command"] = leitura.bt_iniciarLeitura
+        self.leitura = Button(self.botao,text="Leitura",
+         font=self.fontePadrao,width=15,command=leitura.bt_iniciarLeitura)
         self.leitura.pack(side=RIGHT)
 
-        self.sair = Button(self.botao,bg='red')
-        self.sair["text"] = "Sair"
-        self.sair["font"] = ("Calibri", "10")
-        self.sair["width"] = 5
-        self.sair["command"] = self.botao.quit
+        self.teste = Button(self.botao,text="Teste",
+         font=self.fontePadrao,width=15)
+        self.teste["command"] = leitura.bt_iniciarLeitura
+        self.teste.pack(side=RIGHT)
+
+        self.sair = Button(self.botao,bg='red',text="Sair",
+         font=self.fontePadrao,width=5,command=self.botao.quit)
         self.sair.pack()
 
     def init_label(self, master=None):
-        # Container do Titulo #
-        self.contTitulo = Frame(master)
-        self.contTitulo["pady"] = 10
-        self.contTitulo.pack()
-
-        self.titulo = Label(self.contTitulo, text="Monitoramento de dados")
-        self.titulo["font"] = ("Arial", "10", "bold")
-        self.titulo.pack()
 
         self.fontePadrao = ("Arial", "10")
+
+        # Container do Titulo #
+        self.contTitulo = Frame(master,pady=10)
+        self.contTitulo.pack()
+
+        self.titulo = Label(self.contTitulo, text="Monitoramento de dados", font=self.fontePadrao)
+        self.titulo.pack()
+
         # Container do Disco #
-        self.contDisco = Frame(master)
-        self.contDisco["pady"] = 10
+        self.contDisco = Frame(master,pady=10)
         self.contDisco.pack()
 
         self.discoIdLabel = Label(self.contDisco, text="Id Disco", font=self.fontePadrao)
         self.discoIdLabel.pack(side=LEFT, padx=14)
 
-        self.discoIdTxt = Entry(self.contDisco)
-        self.discoIdTxt["width"] = 10
-        self.discoIdTxt["font"] = self.fontePadrao
+        self.discoIdTxt = Entry(self.contDisco ,width = 10, font=self.fontePadrao)
         self.discoIdTxt.pack(side=LEFT, padx=10)
 
         self.discoNomeLabel = Label(self.contDisco, text="Nome Disco", font=self.fontePadrao)
         self.discoNomeLabel.pack(side=LEFT)
 
-        self.discoNomeTxt = Entry(self.contDisco)
-        self.discoNomeTxt["width"] = 10
-        self.discoNomeTxt["font"] = self.fontePadrao
+        self.discoNomeTxt = Entry(self.contDisco,width = 10, font=self.fontePadrao)
         self.discoNomeTxt.pack(side=LEFT)
 
         # Container do Data #
-        self.contDisco = Frame(master)
-        self.contDisco["pady"] = 10
-        self.contDisco.pack()
+        self.contData = Frame(master,pady=10)
+        self.contData.pack()
 
-        self.dtaInicio = Label(self.contDisco, text="Data Inicio", font=self.fontePadrao)
+        self.dtaInicio = Label(self.contData, text="Data Inicio", font=self.fontePadrao)
         self.dtaInicio.pack(side=LEFT, padx=10)
 
-        self.dtaInicioTxt = Entry(self.contDisco)
-        self.dtaInicioTxt["width"] = 10
-        self.dtaInicioTxt["font"] = self.fontePadrao
+        self.dtaInicioTxt = Entry(self.contData,width = 10, font=self.fontePadrao)
         self.dtaInicioTxt.pack(side=LEFT)
 
-        self.dtaFimLabel = Label(self.contDisco, text="Data Fim", font=self.fontePadrao)
+        self.dtaFimLabel = Label(self.contData, text="Data Fim", font=self.fontePadrao)
         self.dtaFimLabel.pack(side=LEFT, padx=14)
 
-        self.dtaFimTxt = Entry(self.contDisco)
-        self.dtaFimTxt["width"] = 10
-        self.dtaFimTxt["font"] = self.fontePadrao
+        self.dtaFimTxt = Entry(self.contData,width = 10, font=self.fontePadrao)
         self.dtaFimTxt.pack(side=LEFT)
 
     def __init__(self, master=None):
@@ -143,13 +131,7 @@ class Application:
         self.init_label()
         self.init_botoes()
 
-        self.fontePadrao = ("Arial", "10")
-        self.leituraCont = Frame(master)
-        self.leituraCont["pady"] = 20
-        self.leituraCont["padx"] = 20
-        self.leituraCont.pack()
 
-        # Container de botões
 
 
 root = Tk()
