@@ -30,17 +30,17 @@ class Application:
             print("")
 
     def plot_botoes(self, master=None):
-
+        #Função que define o estilo, posição e ações referente aos botôes de plot (gráficos)
         self.botao = Frame(master)
         self.botao["pady"] = 10
         self.botao.pack()
 
-        self.plot_E = Button(self.botao,bg='blue')
-        self.plot_E["text"] = "HD (E:)"
-        self.plot_E["font"] = ("Calibri", "10")
-        self.plot_E["width"] = 15
-        self.plot_E["command"] = leitura.bt_plot_HD_E
-        self.plot_E.pack(side=RIGHT)
+        self.plot_E = Button(self.botao,bg='blue') #bg >> define a cor do elemento
+        self.plot_E["text"] = "HD (E:)" #define o conteudo do elemento na tela
+        self.plot_E["font"] = ("Calibri", "10") #define a fonte e o tamanho da mesma
+        self.plot_E["width"] = 15 #tamanho do elemento
+        self.plot_E["command"] = leitura.bt_plot_HD_E #define uma ação ao botão ser clicado
+        self.plot_E.pack(side=RIGHT) #posição do componente
 
         self.plot_D = Button(self.botao,bg='yellow')
         self.plot_D["text"] = "HD (D:)"
@@ -65,22 +65,26 @@ class Application:
 
     def init_botoes(self, master=None):
 
-        self.plot_botoes()
+        self.plot_botoes() #chama a função que define e inicia os botões referente aos gráficos
 
         self.botao = Frame(master,pady=10)
         self.botao.pack()
 
         self.leitura = Button(self.botao,text="Leitura",
-         font=self.fontePadrao,width=15,command=leitura.bt_iniciarLeitura)
+         font=self.fontePadrao,width=15,command=leitura.bt_iniciarLeitura) #define nome, conteudo, fonte ,tamanho e ação do botão
         self.leitura.pack(side=RIGHT)
+
+        self.leituraUnica = Button(self.botao,text="Leitura Unica",
+         font=self.fontePadrao,width=15,command=leitura.bt_iniciarLeituraUnica) #define nome, conteudo, fonte ,tamanho e ação do botão
+        self.leituraUnica.pack(side=RIGHT)
 
         self.teste = Button(self.botao,text="Teste",
          font=self.fontePadrao,width=15)
-        self.teste["command"] = self.print_discoNome
+        self.teste["command"] = self.print_discoId
         self.teste.pack(side=RIGHT)
 
         self.sair = Button(self.botao,bg='red',text="Sair",
-         font=self.fontePadrao,width=5,command=self.botao.quit)
+         font=self.fontePadrao,width=5,command=self.botao.quit) #botão que fecha a aplicação
         self.sair.pack()
 
     def print_discoId(self):
@@ -98,13 +102,18 @@ class Application:
             print("Não conectado", e)
         finally:
             try:
+                self.aviso['text'] = ""
                 discoId = int (self.discoIdTxt.get())
                 print(discoId)
-                cursor.execute("select * from disco where id = %s ",discoId)
-                disco = cursor.fetchall()
-                #print(disco[0])
+                select = "select d.* from disco d where d.id = (%s); " 
+                cursor.execute(select,discoId)
+                if(cursor.fetchall() is not None):
+                    disco = cursor.fetchall()
+                    print(disco)
+                else:
+                    self.aviso['text'] = "Essa merda nunca funciona"
             except ValueError:
-                print("Somente numeros sao aceitos. Tente novamente.")
+                self.aviso['text'] = "Somente numeros sao aceitos. Tente novamente."
 
     def print_discoNome(self):
         try:
@@ -120,16 +129,14 @@ class Application:
             # Caso ocorra erro
             print("Não conectado", e)
         finally:
+            self.aviso['text'] = ""
             discoNome = self.discoNomeTxt.get()
             print(discoNome)
-            select = '"' + '%' + discoNome + '%' + '"'
+            select = "select id from disco where nome like  '%s'  " 
             print (select)
-            cursor.execute("select id from disco where nome like  '%s'  ",select)
+            cursor.execute(select,discoNome)
             discoNome = cursor.fetchone() 
             print(discoNome)
-            #print(disco[0])
-
-
 
     def init_label(self, master=None):
 
@@ -174,10 +181,16 @@ class Application:
         self.dtaFimTxt = Entry(self.contData,width = 10, font=self.fontePadrao)
         self.dtaFimTxt.pack(side=LEFT)
 
+        self.contAviso = Frame(master,pady=10)
+        self.contAviso.pack()
+
+        self.aviso = Label(self.contAviso, text="  ",width = 100, font=self.fontePadrao)
+        self.aviso.pack(side=BOTTOM)
+
     def __init__(self, master=None):
 
-        self.init_label()
-        self.init_botoes()
+        self.init_label() #inicia labels
+        self.init_botoes() #inicia botoes
 
 
 
