@@ -78,10 +78,16 @@ class Application:
          font=self.fontePadrao,width=15,command=leitura.bt_iniciarLeituraUnica) #define nome, conteudo, fonte ,tamanho e ação do botão
         self.leituraUnica.pack(side=RIGHT)
 
-        self.teste = Button(self.botao,text="Teste",
+        self.teste = Button(self.botao,text="TesteId",
          font=self.fontePadrao,width=15)
         self.teste["command"] = self.print_discoId
         self.teste.pack(side=RIGHT)
+
+        self.teste = Button(self.botao,text="TesteNome",
+         font=self.fontePadrao,width=15)
+        self.teste["command"] = self.print_discoNome
+        self.teste.pack(side=RIGHT)
+
 
         self.sair = Button(self.botao,bg='red',text="Sair",
          font=self.fontePadrao,width=5,command=self.botao.quit) #botão que fecha a aplicação
@@ -92,10 +98,9 @@ class Application:
         # Iniciada tentativa de conexão com o banco
             connection = mysql.connector.connect(
             # Informações da base de dados
-            host='localhost', database='projetovi', user='user', password='123456')
+            host='localhost', database='projetovi', user='user', password='123456',buffered = True)
             if connection.is_connected():
                 cursor = connection.cursor()
-                cursor.execute("select database();")
 
         except Error as e:
             # Caso ocorra erro
@@ -105,13 +110,11 @@ class Application:
                 self.aviso['text'] = ""
                 discoId = int (self.discoIdTxt.get())
                 print(discoId)
-                select = "select d.* from disco d where d.id = (%s); " 
-                cursor.execute(select,discoId)
-                if(cursor.fetchall() is not None):
-                    disco = cursor.fetchall()
-                    print(disco)
-                else:
-                    self.aviso['text'] = "Essa merda nunca funciona"
+                select = "select nome,espaco_total from disco where id = '%s'  "
+                cursor.execute(select)
+                records = cursor.fetchall()
+                print(records)
+                self.aviso['text'] = records
             except ValueError:
                 self.aviso['text'] = "Somente numeros sao aceitos. Tente novamente."
 
@@ -120,7 +123,7 @@ class Application:
         # Iniciada tentativa de conexão com o banco
             connection = mysql.connector.connect(
             # Informações da base de dados
-            host='localhost', database='projetovi', user='user', password='123456')
+            host='localhost', database='projetovi', user='user', password='123456',buffered = True)
             if connection.is_connected():
                 cursor = connection.cursor()
                 cursor.execute("select database();")
@@ -132,11 +135,11 @@ class Application:
             self.aviso['text'] = ""
             discoNome = self.discoNomeTxt.get()
             print(discoNome)
-            select = "select id from disco where nome like  '%s'  " 
-            print (select)
+            select = "select id,nome,espaco_total from disco where nome like  %'%s'%  "
             cursor.execute(select,discoNome)
-            discoNome = cursor.fetchone() 
-            print(discoNome)
+            records = cursor.fetchall()
+            print(records)
+            self.aviso['text'] = records
 
     def init_label(self, master=None):
 
@@ -159,11 +162,17 @@ class Application:
         self.discoIdTxt = Entry(self.contDisco ,width = 10, font=self.fontePadrao)
         self.discoIdTxt.pack(side=LEFT, padx=10)
 
-        self.discoNomeLabel = Label(self.contDisco, text="Nome Disco", font=self.fontePadrao)
-        self.discoNomeLabel.pack(side=LEFT)
-
         self.discoNomeTxt = Entry(self.contDisco,width = 10, font=self.fontePadrao)
         self.discoNomeTxt.pack(side=LEFT)
+
+        ckE = Checkbutton(self.contDisco, text='E://', onvalue=3, offvalue=0)
+        ckE.pack(side=BOTTOM)
+
+        ckD = Checkbutton(self.contDisco, text='D://', onvalue=2, offvalue=0)
+        ckD.pack(side=RIGHT)
+
+        ckC = Checkbutton(self.contDisco, text='C://', onvalue=1, offvalue=0)
+        ckC.pack(side=LEFT)
 
         # Container do Data #
         self.contData = Frame(master,pady=10)
@@ -188,6 +197,7 @@ class Application:
         self.aviso.pack(side=BOTTOM)
 
     def __init__(self, master=None):
+
 
         self.init_label() #inicia labels
         self.init_botoes() #inicia botoes

@@ -195,7 +195,7 @@ def bt_iniciarLeitura():
         discoEid = cursor.fetchone()
 
         quantidade = 1
-        while quantidade < 10:
+        while quantidade < 2:
             cursor = connection.cursor(prepared=True)
 
             discoD = psutil.disk_usage('D://')
