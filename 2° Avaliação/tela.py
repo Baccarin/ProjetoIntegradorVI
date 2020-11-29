@@ -133,8 +133,7 @@ class Application:
             print("Não conectado", e)
         finally:
             self.aviso['text'] = ""
-            discoNome = self.discoNomeTxt.get()
-            print(discoNome)
+            if (ckC.)
             select = "select id,nome,espaco_total from disco where nome like  %'%s'%  "
             cursor.execute(select,discoNome)
             records = cursor.fetchall()
@@ -162,8 +161,8 @@ class Application:
         self.discoIdTxt = Entry(self.contDisco ,width = 10, font=self.fontePadrao)
         self.discoIdTxt.pack(side=LEFT, padx=10)
 
-        self.discoNomeTxt = Entry(self.contDisco,width = 10, font=self.fontePadrao)
-        self.discoNomeTxt.pack(side=LEFT)
+        self.discoNomeLabel = Label(self.contDisco, text="Nome Disco", font=self.fontePadrao)
+        self.discoNomeLabel.pack(side=LEFT, padx=14)
 
         ckE = Checkbutton(self.contDisco, text='E://', onvalue=3, offvalue=0)
         ckE.pack(side=BOTTOM)
@@ -173,6 +172,7 @@ class Application:
 
         ckC = Checkbutton(self.contDisco, text='C://', onvalue=1, offvalue=0)
         ckC.pack(side=LEFT)
+        
 
         # Container do Data #
         self.contData = Frame(master,pady=10)
@@ -196,6 +196,11 @@ class Application:
         self.aviso = Label(self.contAviso, text="  ",width = 100, font=self.fontePadrao)
         self.aviso.pack(side=BOTTOM)
 
+    def clearCk(self):
+        ckC.deselect()
+        ckD.deselect()       
+        ckE.deselect()    
+    
     def __init__(self, master=None):
 
 
