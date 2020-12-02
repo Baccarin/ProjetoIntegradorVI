@@ -40,7 +40,8 @@ def bt_plot_HD_D():
         # Caso ocorra erro
         print("Não conectado", e)
     finally:
-        cursor.execute("select l.valor_usado from disco d left join leitura l on l.id_disco = d.id  where d.nome like 'D://' ")
+        cursor.execute("select l.valor_usado from disco d "
+            + "left join leitura l on l.id_disco = d.id  where d.nome like 'D://' ")
         valorHdD = cursor.fetchall()
         plt.plot(valorHdD,'y--')
         plt.ylabel('Ocupação do disco D') 
